@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gear List</title>
+	<link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1>Gear List</h1>
+	<ul>
+		{% for key, value in items.items() %}
+		<li><strong>{{ key }}</strong>: {{ value }}</li>
+		{% endfor %}
+	</ul>
+</body>
+
+</html>
